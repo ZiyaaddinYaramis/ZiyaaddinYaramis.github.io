@@ -163,6 +163,11 @@ h6 {
     display: block;
     padding: 10px 15px; /* Menü öğelerine iç boşluk ekler */
   }
+
+  /* Menü yazılarını gizle, sadece simgeleri göster */
+  #navbar ul li a span {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
