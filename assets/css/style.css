@@ -137,20 +137,31 @@ h6 {
     justify-content: flex-start;
     padding: 10px; /* Mobil cihazlar için padding artırılabilir */
     margin-top: 0; /* Mobil cihazlar için üst boşluk kaldırılabilir */
+    overflow-x: auto; /* Yatay kaydırma eklemek için */
+  }
+
+  #navbar {
+    flex: 1;
+    overflow-x: auto; /* Yatay kaydırma eklemek için */
   }
 
   #navbar ul {
     flex-direction: row;
-    overflow-x: auto; /* Yatay kaydırma eklemek için */
     white-space: nowrap; /* Menü öğelerinin satır kırmasını önler */
+    padding: 0;
+    margin: 0;
+    display: flex;
   }
 
   #navbar ul li {
     margin: 0 5px; /* Menü öğeleri arasına daha küçük boşluk ekler */
+    list-style: none; /* Liste işaretçilerini kaldırır */
+    flex-shrink: 0; /* Öğelerin sıkışmasını engeller */
   }
 
-  #navbar {
-    width: 100%;
+  #navbar ul li a {
+    display: block;
+    padding: 10px 15px; /* Menü öğelerine iç boşluk ekler */
   }
 }
 
