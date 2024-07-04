@@ -117,14 +117,25 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 15px;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* İsteğe bağlı */
+  align-items: center; /* Dikeyde ortalamak için */
+  padding: 10px 20px; /* Üst ve alt için 10px, sağ ve sol için 20px boşluk ekler */
+  margin-top: 20px; /* Header'ın üst kısmına 20px boşluk ekler */
+}
+
+#navbar {
+  display: flex;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar ul li {
+  margin: 0 10px; /* Menü öğeleri arasına boşluk eklemek için */
 }
 
 @media (max-width: 991px) {
