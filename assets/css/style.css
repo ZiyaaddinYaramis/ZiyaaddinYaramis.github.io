@@ -1,11 +1,3 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -138,26 +130,36 @@ h6 {
   margin: 0 10px; /* Menü öğeleri arasına boşluk eklemek için */
 }
 
-@media (max-width: 991px) {
+/* Mobil versiyon için medya sorgusu */
+@media (max-width: 768px) {
   #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
-    left: -300px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px; /* Mobil cihazlar için padding artırılabilir */
+    margin-top: 0; /* Mobil cihazlar için üst boşluk kaldırılabilir */
   }
-}
 
-@media (min-width: 991px) {
-  #main {
-    margin-left: 100px;
+  #navbar ul {
+    flex-direction: row;
+    overflow-x: auto; /* Yatay kaydırma eklemek için */
+    white-space: nowrap; /* Menü öğelerinin satır kırmasını önler */
+  }
+
+  #navbar ul li {
+    margin: 0 5px; /* Menü öğeleri arasına daha küçük boşluk ekler */
+  }
+
+  #navbar {
+    width: 100%;
   }
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
+
+/*
+ Desktop Navigation 
 */
 .nav-menu {
   padding: 0;
@@ -444,51 +446,8 @@ section {
   margin-bottom: 0;
 }
 
-
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #0563bb;
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #011426;
-}
-
-.facts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
