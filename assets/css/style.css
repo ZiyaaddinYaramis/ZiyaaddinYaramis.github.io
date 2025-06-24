@@ -188,7 +188,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -222,7 +222,6 @@ h6 {
 }
 
 @media (min-width: 992px) {
-
   .nav-menu a,
   .nav-menu a:focus {
     width: 56px;
@@ -238,7 +237,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
 }
@@ -246,18 +245,18 @@ h6 {
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
 .nav-menu a:hover,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
 .nav-menu a:hover span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   display: block;
 }
 
@@ -482,20 +481,35 @@ section {
   color: #45505b;
 }
 
+/* .skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+} */
+
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #6c7a89;
 }
 
 .skills .progress-bar-wrap {
   background: #f2f3f5;
 }
 
-.skills .progress-bar {
+/* .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: #0563bb;
+} */
+
+.skills .progress-bar {
+  height: 12px;
+  background-color: #2980b9;
+  transition: width 1.5s ease-in-out;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -732,7 +746,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -740,7 +757,10 @@ section {
   border: 1px solid #0563bb;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #0563bb;
 }
 
@@ -763,7 +783,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1064,7 +1084,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1103,8 +1123,8 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"] {
   height: 44px;
 }
 
@@ -1112,7 +1132,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
@@ -1121,7 +1141,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #0678e3;
 }
 
