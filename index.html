@@ -1236,5 +1236,51 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Form Submission Script  -->
+    <!-- Form Gönderme Komut Dosyası -->
+
+    <script>
+      document
+        .querySelector(".php-email-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const form = e.target;
+          const formData = new FormData(form);
+          const action = form.getAttribute("action");
+
+          // Gönderim öncesi UI güncelle
+          form.querySelector(".loading").style.display = "block";
+          form.querySelector(".error-message").style.display = "none";
+          form.querySelector(".sent-message").style.display = "none";
+
+          try {
+            const response = await fetch(action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              form.querySelector(".loading").style.display = "none";
+              form.querySelector(".sent-message").style.display = "block";
+              form.reset();
+            } else {
+              const data = await response.json();
+              throw new Error(
+                data.message || "There was a problem submitting the form."
+              );
+            }
+          } catch (error) {
+            form.querySelector(".loading").style.display = "none";
+            const errorBox = form.querySelector(".error-message");
+            errorBox.innerText = error.message;
+            errorBox.style.display = "block";
+          }
+        });
+    </script>
   </body>
 </html>
