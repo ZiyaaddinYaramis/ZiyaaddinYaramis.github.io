@@ -35,3 +35,7 @@ This portfolio website showcases my skills, experience, and real-world projects 
 👉 Visit: [https://ziyaaddinyaramis.github.io](https://ziyaaddinyaramis.github.io)
 
 ---
+
+### 📄 Template Attribution
+
+This project is based on the [MyResume](https://bootstrapmade.com/free-html-bootstrap-template-my-resume/) template by [BootstrapMade](https://bootstrapmade.com), licensed for free use with attribution.
