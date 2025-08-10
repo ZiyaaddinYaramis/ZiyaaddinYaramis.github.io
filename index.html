@@ -195,7 +195,7 @@
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>38</span>
+                      <span id="age">age</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -1089,6 +1089,17 @@
             errorBox.style.display = "block";
           }
         });
+    </script>
+
+    <script>
+      (function () {
+        const birth = new Date("1985-04-08");
+        const today = new Date();
+        let age = today.getFullYear() - birth.getFullYear();
+        const m = today.getMonth() - birth.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+        document.getElementById("age").textContent = age;
+      })();
     </script>
   </body>
 </html>
