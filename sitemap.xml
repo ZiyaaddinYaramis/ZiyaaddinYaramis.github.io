@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Portföy ana sayfası -->
   <url>
     <loc>https://portfolio.zyinnova.com/</loc>
   </url>
-  <!-- <url>
-    <loc>https://portfolio.zyinnova.com/project-weather.html</loc>
-  </url>
-  <url>
-    <loc>https://portfolio.zyinnova.com/project-tmdb.html</loc>
-  </url> -->
-  <!-- Diğer projeler buraya eklenir -->
+
+  <!-- Portföydeki proje sayfaları (varsa) -->
+  <!-- Şu an için tek sayfalık, bu yüzden ek alt sayfa yok -->
 </urlset>
+
